@@ -44,8 +44,8 @@ int main()
             temp[k++]=str[i];
             i++;
             if ((k+3)>temp_len){
-                temp = (char*)realloc(temp, temp_len*sizeof(char));
-                temp_len = temp_len + 100;
+                    temp_len = temp_len + 100;
+                    temp = (char*)realloc(temp, temp_len*sizeof(char));
             }
         }
         temp[k++]=str[i];
